@@ -1,0 +1,19 @@
+.container-acceuil{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+}
+
+.container-acceuil img{
+      width: 50%;
+      height: auto;
+}
+
+
+
