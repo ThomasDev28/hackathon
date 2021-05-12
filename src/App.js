@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Accueil from "./components/Accueil";
+import { Link, Switch, Route } from "react-router-dom";
 import "./App.css";
+import Contact from "./components/Contact";
+import Popup from "./components/Popup";
+import Destination from "./components/Destination";
+import Information from "./components/Information";
+import CartesPlanetes from "./components/CartesPlanetes";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
+const [planet, setPlanet] = useState([])
+
+
+
   const listePlanet = [
     {
       name: "Terre",
@@ -37,7 +49,21 @@ function App() {
 
   return (
     <div className="App">
-      {listePlanet.map((planete) => <Accueil {...planete} />)}
+      {/* <Switch>
+        <Route exact path="/">
+          <Accueil />
+        </Route> */}
+        <Route path="/cartes/:name">
+          <CartesPlanetes />
+        </Route>
+
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      {/* </Switch>  */}
+       {/* <Destination /> */}
+      {/* <Navbar /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
