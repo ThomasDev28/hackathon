@@ -49,10 +49,10 @@ const [planet, setPlanet] = useState([])
 
   return (
     <div className="App">
-      {/* <Switch>
+      <Switch>
         <Route exact path="/">
           <Accueil />
-        </Route> */}
+        </Route>
         <Route path="/cartes/:name">
           <CartesPlanetes />
         </Route>
@@ -60,10 +60,10 @@ const [planet, setPlanet] = useState([])
         <Route path="/contact">
           <Contact />
         </Route>
-      {/* </Switch>  */}
+      </Switch> 
        {/* <Destination /> */}
-      {/* <Navbar /> */}
-      {/* <Footer /> */}
+      <Navbar />
+      <Footer />
     </div>
   );
 }

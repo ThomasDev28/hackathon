@@ -1,3 +1,15 @@
+:root{
+  mainColor: #3587a4;
+  textColor: #88ccf1;
+  callColor: #87255b;
+  moodColor: #546679;
+}
+
+
+
+
+
+
 .App {
   width: 100%;
   height: 100vh;
