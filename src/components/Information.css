@@ -1,0 +1,24 @@
+.container-information{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.info-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+.info-planete{
+    display: flex;
+}
+
+.info-txt{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+.info-img h2{
+    color: #fff;
+}

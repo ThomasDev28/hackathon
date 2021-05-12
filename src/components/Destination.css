@@ -1,0 +1,25 @@
+.container-destination{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #000;
+}
+
+.container-destination img{
+    width: 400px;
+    height: 400px;
+}
+
+.container-destination img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container-destination img{
+        width: 400px;
+        height: 400px;
+    }
+}
