@@ -1,0 +1,162 @@
+.contact-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:url('https://static.hitek.fr/img/actualite/ill_m/665504826/terre-plate-1.jpg');
+    background-size: cover;
+
+}
+.contact-form h2{
+   text-align: center;
+   color: #fff;
+   margin-top: 8rem;
+   font-weight: 800;
+   animation: mesinputs 1s 1s ease-in-out forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+.form-content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 4rem;
+}
+
+.contact-form .form-content input{
+    margin-bottom: 1rem;
+     background:transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+input:nth-child(1){
+    animation: mesinputs 1s 1.5s ease-in-out forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+input:nth-child(2){
+    animation: mesinputs 1s 1.8s ease-in-out forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+input:nth-child(3){
+    animation: mesinputs 1s 2.1s ease-in-out forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+input:nth-child(4){
+    animation: mesinputs 1s 2.3s ease-in-out forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+@keyframes mesinputs{
+     0%{
+transform: translateY(-50px);
+opacity: 0;
+     }100%{
+        transform: none;
+        opacity: 1;
+     }
+} 
+    
+
+input::placeholder{
+    color: #fff;
+}
+textarea::placeholder{
+    color: #fff;
+    font-weight: 600;
+}
+.contact-form .form-content input::after{
+        content: "";
+        background: #222;
+        width: 100%;
+        height: 2px;
+        
+      }
+
+.button{
+    margin-top: 2rem;
+    background: transparent;
+    border: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 800;
+    padding: 15px 30px;
+    border-radius: 5px;
+    
+}
+.button:hover{
+    cursor: pointer;
+    background: #fff;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.contact-form .form-content input:focus{
+    list-style-type: none;
+}
+.contact-form .form-content input:focus{
+    outline: none;
+}
+
+@media screen and (min-width: 900px){
+    .contact-form h2{
+        font-size: 50px;
+    }
+    .contact-form .form-content input{
+         background: transparent;
+        border: none;
+        width: 100%;
+        margin-top: 3rem;
+        color: #fff;
+        border-bottom: 4px solid #fff;
+        font-size: 35px;
+    }
+    .contact-form .form-content input:focus{
+        outline: none;
+    }
+   
+    .email-content{
+        width: 100%;
+    }
+    .input::placeholder{
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+
+    }
+    .button{
+        margin-top: 4rem;
+        background: transparent;
+        border: none;
+        border: 3px solid #fff;
+        color: #fff;
+        padding: 25px 40px;
+        border-radius: 5px;
+        font-size: 35px;
+        animation: mesBtn 1s 2.9s ease-in-out forwards;
+        opacity: 0;
+        
+    }
+    @keyframes mesBtn {
+        0%{
+            opacity: 0;
+        }100%{
+            opacity: 1;
+        }
+    }
+    .button:hover{
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+        transition: .5s;
+    }
+    
+}
+
