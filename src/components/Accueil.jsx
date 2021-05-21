@@ -1,5 +1,6 @@
 import React from "react";
 import "./Accueil.css";
+import Destination from "./Destination";
 
 export default function Accueil() {
   return (
@@ -12,6 +13,7 @@ export default function Accueil() {
       <p className="home_p">Star Home offers a planetary overview experience <br/>that will reconnect
         Humans and the stars
       </p></div>
+      < Destination />
         
     </div>
   );

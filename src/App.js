@@ -49,6 +49,7 @@ const [planet, setPlanet] = useState([])
 
   return (
     <div className="App">
+      <Navbar />
       <Switch>
         <Route exact path="/">
           <Accueil />
@@ -61,8 +62,6 @@ const [planet, setPlanet] = useState([])
           <Contact />
         </Route>
       </Switch> 
-       {/* <Destination /> */}
-      <Navbar />
       <Footer />
     </div>
   );
