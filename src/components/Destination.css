@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     background: #000;
+    margin-top: 4rem;
 }
 
 .container-destination img{
@@ -15,6 +16,16 @@
 .container-destination img:hover{
     opacity: 0.5;
     cursor: pointer;
+}
+/* .info-img {
+    width: 50%;
+    height: 45%;
+    display: flex;
+    margin-left: 5rem;
+} */
+
+.info-img h2 {
+    color: #fff;
 }
 
 @media screen and (max-width: 768px) {

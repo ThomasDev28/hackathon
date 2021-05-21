@@ -14,7 +14,7 @@ export default function CartesPlanetes() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data.collection.items);
-        const planeteData = data.collection.items.slice(1, 7).map((item) => {
+        const planeteData = data.collection.items.slice(1, 13).map((item) => {
           const picture = {
             image: item.links[0]?.href,
             dateCreation: item.data[0].date_created,
@@ -31,6 +31,8 @@ export default function CartesPlanetes() {
 
   const infoClick = (url) => {
     history.push(url);
+    window.scroll(0, 0);
+
   };
 
   return (

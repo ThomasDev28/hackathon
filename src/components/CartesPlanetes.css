@@ -1,6 +1,6 @@
 .container-planete {
   width: 100%;
-  height: 155vh;
+  height: 325vh;
   background-color: black;
 }
 
@@ -10,11 +10,12 @@ height: 100%;
 display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
+margin-top: 120px;
 }
 
 .carte-planete {
   
-    width: 31%;
+    width: 25%;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -22,23 +23,22 @@ flex-wrap: wrap;
     margin-bottom: 6rem;
     border-radius: 25px;
     margin-top: 4rem;
-
 }
 
 .carte-planete:hover{
- animation: mesCartes 1s ease-in-out forwards;
+ animation: mesCartess 1s ease-in-out forwards;
  transform: translateY(0px);
  opacity: 1;
  cursor: pointer;
 }
 
-@keyframes mesCartes  {
+@keyframes mesCartess  {
   0%{
       transform: translateY(0px);
       opacity: 1;
   }100%{
 transform: translateY(-50px);
-opacity: 0.4;
+opacity: 1;
   }
 }
 
@@ -107,10 +107,11 @@ font-size: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
   }
   .container-planete {
     width: 100%;
-    height: 350vh;
+    height: 750vh;
     background-color: black;
 }
 .container-destination {

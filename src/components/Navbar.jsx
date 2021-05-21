@@ -7,12 +7,13 @@ export default function Navbar() {
     window.scroll(0, 0);
   };
   return (
-    <div>
+    <div className="container-nav">
       <div className="lignes">
         <div className="l1"></div>
         <div className="l2"></div>
       </div>
       <nav>
+      <img src="img/StarHome.svg" alt="logo" />
         <ul>
           <li> <Link onClick={hautDePage} className="slide-line" to="/">Accueil</Link></li>
           <li> <Link onClick={hautDePage} className="slide-line" to="/cartes/jupiter">Planetes</Link></li>

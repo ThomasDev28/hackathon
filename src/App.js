@@ -62,7 +62,6 @@ const [planet, setPlanet] = useState([])
           <Contact />
         </Route>
       </Switch> 
-       {/* <Destination /> */}
       <Footer />
     </div>
   );

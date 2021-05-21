@@ -5,6 +5,16 @@
   --moodColor: #546679;
   --main-bg-color: #02001a;
 }
+.img_earth{
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+.home_text{
+  opacity: 0.2;
+  background: #000;
+  cursor: pointer;
+}
 
 .home_container {
   overflow: hidden;
@@ -13,13 +23,11 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 100vh;
-  background: var(--main-bg-color);
+  height: 235vh;
+  background: #000;
 }
-.home_text {
-  opacity: 0.2;
-}
-img_earth {
+
+.img_earth {
   mask-image: -webkit-gradient(
     linear,
     left bottom,
@@ -48,7 +56,7 @@ img_earth {
 .rotate_earth {
   height: 35rem;
   width: 35rem;
-  animation: rotation 1000s infinite linear;
+  animation: rotation 250s infinite linear;
 }
 
 @keyframes rotation {
@@ -58,4 +66,30 @@ img_earth {
   to {
     transform: rotate(359deg);
   }
+}
+@media screen and (max-width: 768px){
+  .home_container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 512vh;
+    background: #000;
+}
+.img_earth{
+  background: #000;
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+}
+.home_text{
+  opacity: 0.2;
+  background: #000;
+  cursor: pointer;
+}
+.home_text:hover {
+  opacity: 1;
+}
 }
