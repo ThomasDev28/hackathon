@@ -11,9 +11,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
-const [planet, setPlanet] = useState([])
-
-
+  const [planet, setPlanet] = useState([]);
 
   const listePlanet = [
     {
@@ -61,7 +59,19 @@ const [planet, setPlanet] = useState([])
         <Route path="/contact">
           <Contact />
         </Route>
-      </Switch> 
+      </Switch>
+      <Switch>
+        <Route exact path="/">
+          <Accueil />
+        </Route>
+        <Route path="/cartes/:name">
+          <CartesPlanetes />
+        </Route>
+
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      </Switch>
       <Footer />
     </div>
   );
